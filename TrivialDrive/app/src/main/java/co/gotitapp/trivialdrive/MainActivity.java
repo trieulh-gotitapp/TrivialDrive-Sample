@@ -155,7 +155,7 @@ public class MainActivity extends Activity implements IabBroadcastReceiver.IabBr
          * want to make it easy for an attacker to replace the public key with one
          * of their own and then fake messages from the server.
          */
-        String base64EncodedPublicKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkHOoSTu0M2PIxLVDhvw48vs1f/MuXW3hiiujSBDjhyP+FZwDAlcl1w6t3LrmqtLF3cL/kXogBcRo4PA/iD5+zJAx5SAQAa9DyORAwuqF2nWtgFFuv0basvPpDE54RaOiF/3+7Nkpu1goi8ieUu/xojo6RX5vaiyujBt2CgD11gkA50F9FhwXRjJwNR1+z2pC6NZ3LSjBF5KDXUUjmsJ1Kbos2ZejpiYI569FeYlLmCWJQjuXeElQhOPLmjt1SDXCY7TmbLWP+/FXDJT1CKLTmzO83gR+RAvVBdXxFCQGxZ1tqFVciAXa8fN1DazuP7wzVIhkbiSYVYAnLVJ7gmci0wIDAQAB";
+        String base64EncodedPublicKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl3E1cjqZc0GKRtNBU9xAlP53dCIL4YzOMF0IhLu9xJMC1KD9yr9ZrLSPzZmXbIqfpMQlhq9XqgEAqozGmu7pGs5cYh0F+57HGQqrTbBLONGP33q7P9lEZLPMczOkBHV4MyyW81L5oVGqvSn/IKJasmUJh1VifkggPGaL3OYQ3iR9OPsoXzIngG3h3BtDoOgIt9JHP7hGOvqtpuik7oCCdlV1C0f6BKK83nCMQ+Lu8g+1Hbiw7ucZbVf5wjvmC2SRszoYPBBJ5ddq6uibi9gO+20fWtyY7iSHdKjqvJhHAKXzYfNNnEZ0VotkSS0i4ICyrJyqHSRo752hsc/87SxoZQIDAQAB";
 
         // Some sanity checks to see if the developer (that's you!) really followed the
         // instructions to run this sample (don't put these checks on your app!)
