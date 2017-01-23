@@ -21,13 +21,13 @@ repositories {
 }
 android {
     signingConfigs {
-        /* TODO(developer): Configure to sign app with a release key for testing.
+//         TODO(developer): Configure to sign app with a release key for testing.
         release {
-            storeFile file('path/to/release/signing/key')
-            keyAlias 'release_key_alias'
-            keyPassword "${password}"
-            storePassword "${password}"
-        }*/
+            storeFile file('/Users/gotit/Projects/TrivialDrive-Sample/TrivialDrive/fastlane/gotit_trivialdrive.jks')
+            keyAlias 'gotit_trivialdrive'
+            keyPassword "12345678"
+            storePassword "12345678"
+        }
     }
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
@@ -44,7 +44,7 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             // TODO(developer): uncomment below once config above is complete and uncommented.
-            // signingConfig signingConfigs.release
+             signingConfig signingConfigs.release
         }
     }
 
