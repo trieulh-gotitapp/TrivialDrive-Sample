@@ -34,5 +34,9 @@
             </intent-filter>
         </activity>
 
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e500435f52db85b2acb159c9bbdaa6a63eccec0d" />
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

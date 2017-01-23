@@ -30,6 +30,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 
+import com.crashlytics.android.Crashlytics;
+import io.fabric.sdk.android.Fabric;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -138,6 +140,7 @@ public class MainActivity extends Activity implements IabBroadcastReceiver.IabBr
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
 
         setContentView(R.layout.activity_main);
 
@@ -155,7 +158,7 @@ public class MainActivity extends Activity implements IabBroadcastReceiver.IabBr
          * want to make it easy for an attacker to replace the public key with one
          * of their own and then fake messages from the server.
          */
-        String base64EncodedPublicKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl3E1cjqZc0GKRtNBU9xAlP53dCIL4YzOMF0IhLu9xJMC1KD9yr9ZrLSPzZmXbIqfpMQlhq9XqgEAqozGmu7pGs5cYh0F+57HGQqrTbBLONGP33q7P9lEZLPMczOkBHV4MyyW81L5oVGqvSn/IKJasmUJh1VifkggPGaL3OYQ3iR9OPsoXzIngG3h3BtDoOgIt9JHP7hGOvqtpuik7oCCdlV1C0f6BKK83nCMQ+Lu8g+1Hbiw7ucZbVf5wjvmC2SRszoYPBBJ5ddq6uibi9gO+20fWtyY7iSHdKjqvJhHAKXzYfNNnEZ0VotkSS0i4ICyrJyqHSRo752hsc/87SxoZQIDAQAB";
+        String base64EncodedPublicKey = BuildConfig.base64EncodedPublicKey;
 
         // Some sanity checks to see if the developer (that's you!) really followed the
         // instructions to run this sample (don't put these checks on your app!)
